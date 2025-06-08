@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Challenging Star Darshan</title>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 20px;
+      color: #fff;
+    }
+
+    .card {
+      max-width: 800px;
+      margin: 30px auto;
+      background-color: #111;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 24px;
+      opacity: 0;
+      animation: fadeIn 1.5s ease forwards;
+    }
+
+    .card img {
+      width: 250px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      border: 5px solid #ffc107;
+      animation: bounceIn 1.2s ease;
+    }
+
+    .card h1 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 32px;
+      color: #ffc107;
+      margin-bottom: 10px;
+    }
+
+    .bio {
+      text-align: center;
+      margin-bottom: 20px;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: slideIn 1s ease 1s forwards;
+    }
+
+    .dialogue {
+      font-size: 20px;
+      background-color: #222;
+      padding: 15px;
+      border-left: 5px solid #ffc107;
+      margin-top: 10px;
+      font-style: italic;
+      opacity: 0;
+      animation: fadeIn 1s ease 2s forwards;
+    }
+
+    .footer {
+      margin-top: 30px;
+      font-size: 14px;
+      color: #aaa;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes bounceIn {
+      0% {
+        transform: scale(0.3);
+        opacity: 0;
+      }
+      50% {
+        transform: scale(1.05);
+        opacity: 1;
+      }
+      70% {
+        transform: scale(0.9);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <img src="darshan.jpg" alt="Darshan DBoss">
+
+    <h1>Challenging Star Darshan</h1>
+
+    <div class="bio">
+      <p><strong>Born:</strong> February 16, 1977, in Ponnampet, Karnataka, India</p>
+      <p><strong>Occupation:</strong> Actor, Producer, Distributor</p>
+      <p>Darshan Thoogudeepa, popularly known as DBoss, is one of the biggest stars of Kannada cinema. Known for his mass appeal, action roles, and deep voice, he has a massive fan base across Karnataka. He started his career in 2001 and became a top hero with films like <em>Kariya</em>, <em>Saarathi</em>, <em>Yajamana</em>, and <em>Kurukshetra</em>.</p>
+    </div>
+
+    <div class="dialogue">
+      “Naan yaaru anta kelbeku andre, Naan hogi baralla anta heli!”<br>
+      <small>— DBoss Style 😎</small>
+    </div>
+
+    <div class="footer">
+      © 2025 DBoss Fans Karnataka
+    </div>
+  </div>
+
+</body>
+</html>
